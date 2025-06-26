@@ -29,13 +29,15 @@ const Computers = ({isMobile}) => {
       {/* Primitive is used to render the loaded GLTF scene */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.5 : 0.65}
-        position={isMobile ? [0, -2, -2.2] : [0, -2.25, -1.5]}
+        scale={ 0.65}
+        position={[0, -2.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
   );
 };
+        // position={isMobile ? [0, -2, -2.2] : [0, -2.25, -1.5]}
+        // scale={isMobile ? 0.5 : 0.65}
 
 // ComputersCanvas component which sets up the Three.js Canvas
 const ComputersCanvas = () => {
@@ -77,7 +79,8 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2} // Limit vertical rotation to prevent going above the sky
         />
         {/* Render the Computers component inside the Canvas */}
-        <Computers isMobile={isMobile} />
+        {/* <Computers isMobile={isMobile} /> */}
+        {isMobile?'':<Computers/>}
       </Suspense>
 
       {/* Ambient light provides a general, non-directional illumination to the scene */}
