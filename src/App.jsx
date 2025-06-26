@@ -6,15 +6,7 @@ import { toast,ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
-  // const AlertRef = useRef(false)
-//   useEffect(()=>{
-//     if(!AlertRef.current){
-//     alert("Welcome! This portfolio highlights core React projects. Experience & Testimonials sections feature dummy content. I am an aspiring front-end developer skilled in JS, React, and other UI libraries."
 
-// )
-//     }
-//     AlertRef.current= true;
-//   },[])
 useEffect(()=>{
 
   toast.info('Project Contain Dummy Experience and Testimonials')
