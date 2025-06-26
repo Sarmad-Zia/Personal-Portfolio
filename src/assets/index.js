@@ -29,7 +29,7 @@ import tesla from "./company/tesla.png";
 import Forever from "./Forever.jpg";
 import portfolio from "./portfolio.jpg";
 
-import  Model  from "./planet/Planet";
+import mainImg from './main.png'
 
 export {
   Logo,
@@ -59,5 +59,5 @@ export {
   tesla,
   Forever,
   portfolio,
-  Model
+  mainImg
 };
