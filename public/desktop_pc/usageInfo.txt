@@ -1,0 +1,6 @@
+i have seen video in which you can change 3d-model name of both files like .bin and .gltf 
+but remember that in .gltf file you shoud also change the .bin file name that matches to
+new name of .bin file
+
+then to convert gltf to jsx file use the command
+npx gltfjsx  fileName
